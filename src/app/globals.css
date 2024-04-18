@@ -4,17 +4,17 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
+  --background-start-rgb: 255, 255, 255;
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -30,4 +30,32 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.page-height {
+  height: calc(100vh - 70px);
+}
+
+.arrow-container {
+  display: flex;
+  align-items: center;
+}
+
+.arrow-container:hover .line {
+  background-image: url("/assets/images/right-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  transition: 300ms;
+}
+
+.line {
+  background-image: url("/assets/images/line.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 50px;
+  height: 10px;
 }
