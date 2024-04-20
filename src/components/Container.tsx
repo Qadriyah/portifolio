@@ -2,6 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import SocialLinks from "./SocialLinks";
 
 type IProps = React.PropsWithChildren & {
   containerId: string;
@@ -15,20 +16,7 @@ const Container: React.FC<IProps> = ({ containerId, children }) => {
       style={{ minHeight: "calc(100vh - 70px)" }}
     >
       <div className="flex-col gap-5 justify-end items-center pr-5 hidden md:flex">
-        <Link
-          href="https://www.linkedin.com/in/baker-sekitoleko-b52257192"
-          className="cursor-pointer"
-          target="_blank"
-        >
-          <FaLinkedin size={30} className="text-gray-500 hover:text-white" />
-        </Link>
-        <Link
-          href="https://github.com/Qadriyah"
-          className="cursor-pointer"
-          target="_blank"
-        >
-          <FaGithub size={30} className="text-gray-500 hover:text-white" />
-        </Link>
+        <SocialLinks />
         <span className="h-10 border-r-2 border-r-white" />
       </div>
       {children}
