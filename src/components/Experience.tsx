@@ -3,10 +3,11 @@ import React from "react";
 import Container from "./Container";
 import { Tabs, TabsProps } from "antd";
 import { Roboto } from "next/font/google";
-import Technologies from "./Technologies";
 import { useIsVisible } from "@/hooks";
 import { useAppDispatch } from "@/lib/hooks";
 import { setActive } from "@/lib/features/menu";
+import employment from "../data/employment.json";
+import Employment from "./Employment";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -18,305 +19,37 @@ const items: TabsProps["items"] = [
     key: "1",
     label: "Virtus Ventures",
     className: `text-[18px] text-white ${roboto.className}`,
-    children: (
-      <div className="pl-5">
-        <div className="mb-5">
-          <p className="font-bold">Full-Stack Engineer</p>
-          <p className="text-[17px]">Mar 2023 - Present</p>
-        </div>
-        <ul className="list">
-          <li>
-            Made significant improvements to in-house CRM such as introducing
-            database transactions (reduced integration test time by over 60%)
-            and keyset pagination which decreased fetching time by 20%, as well
-            as failure retry logic.
-          </li>
-          <li>
-            Introduced periodic report generation that increated loading time by
-            40%. Also seperated a single reporting module that would load
-            multiple reports simultaneously into seperating granular reports
-            that increased loading by over 90%
-          </li>
-          <li>
-            I wrote logic for uploading customer files on Google Cloud which
-            were being store on a local hard drive. This significantly improved
-            operational efficiency and employee productivity by 15%
-          </li>
-          <li>
-            Also introduced redis caching on routes that were fetching a lot of
-            data, this significantly improved the response time
-          </li>
-          <li>
-            I&#x2019;m currently working a property management tool that is used
-            to manage construction work on apartment buldings
-          </li>
-          <li>
-            <div className="flex gap-5">
-              <p>Technologies:</p>
-              <Technologies
-                technologies={[
-                  "TS",
-                  "TS",
-                  "React",
-                  "Redux",
-                  "Bootstrap",
-                  "Ant Design",
-                  "Formik",
-                  "Next",
-                  "Tailwind",
-                  "GCP",
-                  "Node",
-                  "Express",
-                  "Nest",
-                  "MongoDB",
-                  "Mocha",
-                  "Chai",
-                  "Jest",
-                  "React Testing Library",
-                  "Digital Ocean",
-                ]}
-              />
-            </div>
-          </li>
-        </ul>
-      </div>
-    ),
+    children: <Employment employer={employment.Virtus} />,
   },
   {
     key: "2",
     label: "Cognative Insights",
     className: `text-[18px] text-white ${roboto.className}`,
-    children: (
-      <div className="pl-5">
-        <div className="mb-5">
-          <p className="font-bold">Frontend Engineer</p>
-          <p className="text-[17px]">Sep 2022 - Feb - 2023</p>
-        </div>
-        <ul className="list">
-          <li>
-            Led the development of a construction services hailing application
-            that registsred a significant number of service providers and
-            customers during it&#x2019;s launch.
-          </li>
-          <li>
-            Worked closely with the design and backend teams to ensure we put up
-            something that would make the customers happy and create lasting
-            value for the company.
-          </li>
-          <li>
-            Performed software testing to uncover bugs and troubleshoot
-            performance issues prior to application launch.
-          </li>
-          <li>
-            <div className="flex gap-5">
-              <p>Technologies:</p>
-              <Technologies
-                technologies={[
-                  "JS",
-                  "TS",
-                  "React Native",
-                  "Redux",
-                  "Redux Toolkit",
-                  "React Native Elements",
-                  "Expo",
-                  "Formik",
-                  "Socket.io",
-                ]}
-              />
-            </div>
-          </li>
-        </ul>
-      </div>
-    ),
+    children: <Employment employer={employment.Cognative} />,
   },
   {
     key: "3",
     label: "LUK Solar",
     className: `text-[18px] text-white ${roboto.className}`,
-    children: (
-      <div className="pl-5">
-        <div className="mb-5">
-          <p className="font-bold">Frontend Engineer</p>
-          <p className="text-[17px]">Mar 2022 - Aug - 2022</p>
-        </div>
-        <ul className="list">
-          <li>
-            Led the development of a in-house sales management application for
-            solar products which increased Solar Scout productivity by 30%,
-            reduced administrative overhead by 20%, increased operational
-            efficiency and generated more funding for the company.
-          </li>
-          <li>
-            Worked closely with the design and backend teams to ensure we put up
-            something that would make the users (Solar Scouts) happy and create
-            lasting value for the company.
-          </li>
-          <li>
-            <div className="flex gap-5">
-              <p>Technologies:</p>
-              <Technologies
-                technologies={[
-                  "JS",
-                  "TS",
-                  "React Native",
-                  "Redux",
-                  "Redux Toolkit",
-                  "Native Base",
-                  "Expo",
-                  "Formik",
-                  "Socket.io",
-                ]}
-              />
-            </div>
-          </li>
-        </ul>
-      </div>
-    ),
+    children: <Employment employer={employment.LUKSolar} />,
   },
   {
     key: "4",
     label: "HackerBay",
     className: `text-[18px] text-white ${roboto.className}`,
-    children: (
-      <div className="pl-5">
-        <div className="mb-5">
-          <p className="font-bold">Full-Stack Engineer</p>
-          <p className="text-[17px]">May 2020 - Oct - 2022</p>
-        </div>
-        <ul className="list">
-          <li>
-            Worked on a site reliability engineering tool. Developed and
-            maintained — hands-on and fullstack — dozens of core features in
-            Javascript, Node and React, across the entire platform.
-          </li>
-          <li>
-            Refactored a React Native app and introduced Redux to provide a
-            central store that holds all states of the application there by
-            optimizing re-renders and preventing unnecessary rendering of
-            components, leading to better application performance and
-            scalability.
-          </li>
-          <li>
-            I developed logic for stitching multiple images into a single image
-            for upload without compromising the quality. Achieved 16x reduction
-            in the upload time
-          </li>
-          <li>
-            <div className="flex gap-5">
-              <p>Technologies:</p>
-              <Technologies
-                technologies={[
-                  "JS",
-                  "React",
-                  "Redux",
-                  "Redux Form",
-                  "Bootstrap",
-                  "Socket.io",
-                  "Node",
-                  "Express",
-                  "Puppeteer",
-                  "Mocha",
-                  "Chai",
-                  "Jest",
-                  "MongoDB",
-                  "OpenCV",
-                  "React Native",
-                  "Expo",
-                ]}
-              />
-            </div>
-          </li>
-        </ul>
-      </div>
-    ),
+    children: <Employment employer={employment.HackerBay} />,
   },
   {
     key: "5",
     label: "Andela",
     className: `text-[18px] text-white ${roboto.className}`,
-    children: (
-      <div className="pl-5">
-        <div className="mb-5">
-          <p className="font-bold">Full-Stack Engineer</p>
-          <p className="text-[17px]">Dec 2018 - Dec - 2019</p>
-        </div>
-        <ul className="list">
-          <li>
-            Developed and maintained major features of Andela&#x2019;s in-house,
-            engineer placement process managing app.
-          </li>
-          <li>
-            Worked on multiple Andela bootcamp projects enganging in the entire
-            development lifecycle, right from requirements gathering and
-            refining to implementation and deployment
-          </li>
-          <li>
-            <div className="flex gap-5">
-              <p>Technologies:</p>
-              <Technologies
-                technologies={[
-                  "JS",
-                  "React",
-                  "Redux",
-                  "SASS",
-                  "PHP",
-                  "Laravel",
-                  "PHP Unit",
-                  "Jest",
-                  "Enzyme",
-                  "Python",
-                  "Flask",
-                  "Django",
-                  "Postgre SQL",
-                ]}
-              />
-            </div>
-          </li>
-        </ul>
-      </div>
-    ),
+    children: <Employment employer={employment.Andela} />,
   },
   {
     key: "6",
     label: "Go Pay",
     className: `text-[18px] text-white ${roboto.className}`,
-    children: (
-      <div className="pl-5">
-        <div className="mb-5">
-          <p className="font-bold">Full-Stack Engineer</p>
-          <p className="text-[17px]">Aug 2017 - Oct - 2018</p>
-        </div>
-        <ul className="list">
-          <li>
-            Developed and maintained major features of Go Pay&#x2019;s
-            management dashboard
-          </li>
-          <li>
-            Implemented and tested the mobile money integration using the inter
-            switch API. This improved the productivity of the backend team which
-            was not family with the mobile money technology
-          </li>
-          <li>
-            <div className="flex gap-5">
-              <p>Technologies:</p>
-              <Technologies
-                technologies={[
-                  "JS",
-                  "React",
-                  "Redux",
-                  "Bootstrap",
-                  "PHP",
-                  "Laravel",
-                  "PHP Unit",
-                  "Jest",
-                  "MySQL",
-                ]}
-              />
-            </div>
-          </li>
-        </ul>
-      </div>
-    ),
+    children: <Employment employer={employment.GoPay} />,
   },
 ];
 

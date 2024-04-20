@@ -1,0 +1,22 @@
+[
+  {
+    "id": "about",
+    "title": "About",
+    "route": "#about"
+  },
+  {
+    "id": "experience",
+    "title": "Experience",
+    "route": "#experience"
+  },
+  {
+    "id": "projects",
+    "title": "Projects",
+    "route": "#projects"
+  },
+  {
+    "id": "contact",
+    "title": "Contact",
+    "route": "#contact"
+  }
+]

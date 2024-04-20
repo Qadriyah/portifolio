@@ -6,6 +6,7 @@ import { useAppDispatch } from "@/lib/hooks";
 import { setActive } from "@/lib/features/menu";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import SocialLinks from "./SocialLinks";
 
 const Contact = () => {
   const dispatch = useAppDispatch();
@@ -40,26 +41,7 @@ const Contact = () => {
               <p className="text-4xl">Contact</p>
               <p>Email: b.alzawad@gmail.com</p>
               <div className="flex gap-5">
-                <Link
-                  href="https://www.linkedin.com/in/baker-sekitoleko-b52257192"
-                  className="cursor-pointer"
-                  target="_blank"
-                >
-                  <FaLinkedin
-                    size={30}
-                    className="text-gray-500 hover:text-white"
-                  />
-                </Link>
-                <Link
-                  href="https://github.com/Qadriyah"
-                  className="cursor-pointer"
-                  target="_blank"
-                >
-                  <FaGithub
-                    size={30}
-                    className="text-gray-500 hover:text-white"
-                  />
-                </Link>
+                <SocialLinks />
               </div>
             </div>
             <div className="flex flex-col gap-10 flex-1">
