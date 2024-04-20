@@ -14,7 +14,7 @@ const Container: React.FC<IProps> = ({ containerId, children }) => {
       id={containerId}
       style={{ minHeight: "calc(100vh - 70px)" }}
     >
-      <div className="flex flex-col gap-5 justify-end items-center pr-5">
+      <div className="flex-col gap-5 justify-end items-center pr-5 hidden md:flex">
         <Link
           href="https://www.linkedin.com/in/baker-sekitoleko-b52257192"
           className="cursor-pointer"
@@ -32,7 +32,7 @@ const Container: React.FC<IProps> = ({ containerId, children }) => {
         <span className="h-10 border-r-2 border-r-white" />
       </div>
       {children}
-      <div className="flex flex-col gap-5 justify-end w-10">
+      <div className="flex-col gap-5 justify-end w-10 hidden md:flex">
         <div className="w-10 h-10 border-r-2 border-r-white border-b-2 border-b-white" />
       </div>
     </section>
