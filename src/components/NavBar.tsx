@@ -7,7 +7,7 @@ const NavBar = () => {
   const { active } = useAppSelector((state) => state.menu);
 
   return (
-    <nav className="w-full border-b bg-white fixed top-0 z-50 h-[70px]">
+    <nav className="w-full bg-[#060b10] fixed top-0 z-50 h-[70px]">
       <div className="flex gap-5 justify-center">
         <Anchor
           id={`${active === "about" ? "active" : undefined}`}
