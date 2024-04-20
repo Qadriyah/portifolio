@@ -17,7 +17,7 @@ const items: TabsProps["items"] = [
   {
     key: "1",
     label: "Virtus Ventures",
-    className: `text-[18px] ${roboto.className}`,
+    className: `text-[18px] text-white ${roboto.className}`,
     children: (
       <div className="pl-5">
         <div className="mb-5">
@@ -51,28 +51,32 @@ const items: TabsProps["items"] = [
             to manage construction work on apartment buldings
           </li>
           <li>
-            <Technologies
-              technologies={[
-                "TS",
-                "TS",
-                "React",
-                "Redux",
-                "Bootstrap",
-                "Ant Design",
-                "Formik",
-                "Next",
-                "GCP",
-                "Node",
-                "Express",
-                "Nest",
-                "MongoDB",
-                "Mocha",
-                "Chai",
-                "Jest",
-                "React Testing Library",
-                "Digital Ocean",
-              ]}
-            />
+            <div className="flex gap-5">
+              <p>Technologies:</p>
+              <Technologies
+                technologies={[
+                  "TS",
+                  "TS",
+                  "React",
+                  "Redux",
+                  "Bootstrap",
+                  "Ant Design",
+                  "Formik",
+                  "Next",
+                  "Tailwind",
+                  "GCP",
+                  "Node",
+                  "Express",
+                  "Nest",
+                  "MongoDB",
+                  "Mocha",
+                  "Chai",
+                  "Jest",
+                  "React Testing Library",
+                  "Digital Ocean",
+                ]}
+              />
+            </div>
           </li>
         </ul>
       </div>
@@ -81,7 +85,7 @@ const items: TabsProps["items"] = [
   {
     key: "2",
     label: "Cognative Insights",
-    className: `text-[18px] ${roboto.className}`,
+    className: `text-[18px] text-white ${roboto.className}`,
     children: (
       <div className="pl-5">
         <div className="mb-5">
@@ -104,19 +108,22 @@ const items: TabsProps["items"] = [
             performance issues prior to application launch.
           </li>
           <li>
-            <Technologies
-              technologies={[
-                "JS",
-                "TS",
-                "React Native",
-                "Redux",
-                "Redux Toolkit",
-                "React Native Elements",
-                "Expo",
-                "Formik",
-                "Socket.io",
-              ]}
-            />
+            <div className="flex gap-5">
+              <p>Technologies:</p>
+              <Technologies
+                technologies={[
+                  "JS",
+                  "TS",
+                  "React Native",
+                  "Redux",
+                  "Redux Toolkit",
+                  "React Native Elements",
+                  "Expo",
+                  "Formik",
+                  "Socket.io",
+                ]}
+              />
+            </div>
           </li>
         </ul>
       </div>
@@ -125,7 +132,7 @@ const items: TabsProps["items"] = [
   {
     key: "3",
     label: "LUK Solar",
-    className: `text-[18px] ${roboto.className}`,
+    className: `text-[18px] text-white ${roboto.className}`,
     children: (
       <div className="pl-5">
         <div className="mb-5">
@@ -145,19 +152,22 @@ const items: TabsProps["items"] = [
             lasting value for the company.
           </li>
           <li>
-            <Technologies
-              technologies={[
-                "JS",
-                "TS",
-                "React Native",
-                "Redux",
-                "Redux Toolkit",
-                "Native Base",
-                "Expo",
-                "Formik",
-                "Socket.io",
-              ]}
-            />
+            <div className="flex gap-5">
+              <p>Technologies:</p>
+              <Technologies
+                technologies={[
+                  "JS",
+                  "TS",
+                  "React Native",
+                  "Redux",
+                  "Redux Toolkit",
+                  "Native Base",
+                  "Expo",
+                  "Formik",
+                  "Socket.io",
+                ]}
+              />
+            </div>
           </li>
         </ul>
       </div>
@@ -166,7 +176,7 @@ const items: TabsProps["items"] = [
   {
     key: "4",
     label: "HackerBay",
-    className: `text-[18px] ${roboto.className}`,
+    className: `text-[18px] text-white ${roboto.className}`,
     children: (
       <div className="pl-5">
         <div className="mb-5">
@@ -180,28 +190,41 @@ const items: TabsProps["items"] = [
             Javascript, Node and React, across the entire platform.
           </li>
           <li>
-            Worked closely with the design and backend teams to ensure we put up
-            something that would make the users (Solar Scouts) happy and create
-            lasting value for the company.
+            Refactored a React Native app and introduced Redux to provide a
+            central store that holds all states of the application there by
+            optimizing re-renders and preventing unnecessary rendering of
+            components, leading to better application performance and
+            scalability.
           </li>
           <li>
-            <Technologies
-              technologies={[
-                "JS",
-                "React",
-                "Redux",
-                "Redux Form",
-                "Bootstrap",
-                "Socket.io",
-                "Node",
-                "Express",
-                "Puppeteer",
-                "Mocha",
-                "Chai",
-                "Jest",
-                "MongoDB",
-              ]}
-            />
+            I developed logic for stitching multiple images into a single image
+            for upload without compromising the quality. Achieved 16x reduction
+            in the upload time
+          </li>
+          <li>
+            <div className="flex gap-5">
+              <p>Technologies:</p>
+              <Technologies
+                technologies={[
+                  "JS",
+                  "React",
+                  "Redux",
+                  "Redux Form",
+                  "Bootstrap",
+                  "Socket.io",
+                  "Node",
+                  "Express",
+                  "Puppeteer",
+                  "Mocha",
+                  "Chai",
+                  "Jest",
+                  "MongoDB",
+                  "OpenCV",
+                  "React Native",
+                  "Expo",
+                ]}
+              />
+            </div>
           </li>
         </ul>
       </div>
@@ -210,7 +233,7 @@ const items: TabsProps["items"] = [
   {
     key: "5",
     label: "Andela",
-    className: `text-[18px] ${roboto.className}`,
+    className: `text-[18px] text-white ${roboto.className}`,
     children: (
       <div className="pl-5">
         <div className="mb-5">
@@ -228,23 +251,26 @@ const items: TabsProps["items"] = [
             refining to implementation and deployment
           </li>
           <li>
-            <Technologies
-              technologies={[
-                "JS",
-                "React",
-                "Redux",
-                "SASS",
-                "PHP",
-                "Laravel",
-                "PHP Unit",
-                "Jest",
-                "Enzyme",
-                "Python",
-                "Flask",
-                "Django",
-                "Postgre SQL",
-              ]}
-            />
+            <div className="flex gap-5">
+              <p>Technologies:</p>
+              <Technologies
+                technologies={[
+                  "JS",
+                  "React",
+                  "Redux",
+                  "SASS",
+                  "PHP",
+                  "Laravel",
+                  "PHP Unit",
+                  "Jest",
+                  "Enzyme",
+                  "Python",
+                  "Flask",
+                  "Django",
+                  "Postgre SQL",
+                ]}
+              />
+            </div>
           </li>
         </ul>
       </div>
@@ -253,7 +279,7 @@ const items: TabsProps["items"] = [
   {
     key: "6",
     label: "Go Pay",
-    className: `text-[18px] ${roboto.className}`,
+    className: `text-[18px] text-white ${roboto.className}`,
     children: (
       <div className="pl-5">
         <div className="mb-5">
@@ -271,19 +297,22 @@ const items: TabsProps["items"] = [
             was not family with the mobile money technology
           </li>
           <li>
-            <Technologies
-              technologies={[
-                "JS",
-                "React",
-                "Redux",
-                "Bootstrap",
-                "PHP",
-                "Laravel",
-                "PHP Unit",
-                "Jest",
-                "MySQL",
-              ]}
-            />
+            <div className="flex gap-5">
+              <p>Technologies:</p>
+              <Technologies
+                technologies={[
+                  "JS",
+                  "React",
+                  "Redux",
+                  "Bootstrap",
+                  "PHP",
+                  "Laravel",
+                  "PHP Unit",
+                  "Jest",
+                  "MySQL",
+                ]}
+              />
+            </div>
           </li>
         </ul>
       </div>
@@ -305,7 +334,7 @@ const Experience = () => {
   return (
     <Container containerId="experience">
       <div className="flex-1" ref={ref} id={isVisible ? "visible" : ""}>
-        <div className="flex flex-col lg:flex-row gap-10 my-10 py-10 border-b-2 border-b-black">
+        <div className="flex flex-col lg:flex-row gap-10 my-10 py-10 border-b-2 border-b-white">
           <p className="text-5xl">Experience</p>
           <p>
             Over the years, I have built extensive knowledge, expertise and
@@ -315,11 +344,19 @@ const Experience = () => {
           </p>
         </div>
         <div className="overflow-x-scroll min-w-[200px]">
-          <Tabs
-            tabPosition="left"
-            items={items}
-            className={`${roboto.className} text-[24px] font-bold`}
-          />
+          <div>
+            <Tabs
+              tabPosition="left"
+              animated={{ tabPane: false, inkBar: false }}
+              tabBarStyle={{
+                fontSize: "18px",
+                color: "#fff",
+                backgroundColor: "#12181f",
+              }}
+              items={items}
+              className={`${roboto.className}`}
+            />
+          </div>
         </div>
       </div>
     </Container>
