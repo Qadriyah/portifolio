@@ -49,14 +49,12 @@ const About = () => {
           </div>
         </div>
         <div className="flex-1 flex justify-center my-auto">
-          <div className="w-[400px] h-[400px]">
-            <Image
-              src="/assets/images/me.jpg"
-              alt="me"
-              width={400}
-              height={400}
-            />
-          </div>
+          <Image
+            src="/assets/images/me.jpg"
+            alt="me"
+            width={400}
+            height={400}
+          />
         </div>
       </div>
     </Container>
