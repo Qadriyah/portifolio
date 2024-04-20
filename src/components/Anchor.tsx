@@ -12,11 +12,11 @@ const Anchor: React.FC<IProps> = ({ offset, ...props }) => {
     const element = document.getElementById("active");
     element?.removeAttribute("id");
     element?.classList.remove(...["text-blue-500", "border-b-2"]);
-
     event.currentTarget.classList.add(
       ...["text-blue-500", "border-b-2", "border-b-blue-500"]
     );
     event.currentTarget.setAttribute("id", "active");
+
     const id = event.currentTarget.getAttribute("href")?.slice(1);
 
     if (id) {

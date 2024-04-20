@@ -3,13 +3,14 @@ import React from "react";
 import Anchor from "./Anchor";
 import { useAppSelector } from "@/lib/hooks";
 import menuItems from "../data/menuItems.json";
+import Drawer from "./DrawerNav/Drawer";
 
 const NavBar = () => {
   const { active } = useAppSelector((state) => state.menu);
 
   return (
-    <nav className="w-full bg-[#060b10] fixed top-0 z-50 h-[70px]">
-      <div className="flex gap-5 justify-center">
+    <nav className="w-full bg-[#060b10] fixed top-0 z-50 h-[70px] menu">
+      <div className="gap-5 justify-center hidden md:flex">
         {menuItems.map((item, index) => (
           <Anchor
             key={index}
@@ -26,6 +27,7 @@ const NavBar = () => {
           </Anchor>
         ))}
       </div>
+      <Drawer />
     </nav>
   );
 };
