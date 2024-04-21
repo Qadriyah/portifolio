@@ -21,7 +21,7 @@ const About = () => {
   return (
     <Container containerId="about">
       <div
-        className="flex-1 flex flex-col-reverse lg:flex-row"
+        className="flex-1 flex gap-10 flex-col-reverse lg:flex-row"
         ref={ref}
         id={isVisible ? "visible" : ""}
       >
@@ -48,14 +48,15 @@ const About = () => {
             </Link>
           </div>
         </div>
-        <div className="flex-1 flex justify-center my-auto">
-          <Image
-            src="/assets/images/me.jpg"
-            alt="me"
-            width={400}
-            height={400}
-          />
-        </div>
+        <div
+          className="min-h-[300px] w-full lg:w-[400px] lg:h-[400px] my-auto"
+          style={{
+            backgroundImage: `url(${"/assets/images/me.jpg"})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        />
       </div>
     </Container>
   );

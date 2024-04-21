@@ -12,7 +12,7 @@ export type IProps = {
 
 const Employment: FunctionComponent<IProps> = ({ employer }) => {
   return (
-    <div className="pl-5">
+    <div className="pl-5 pt-[20px]">
       <div className="mb-5">
         <p className="font-bold">{employer.position}</p>
         <p className="text-[17px]">{employer.date}</p>

@@ -26,17 +26,9 @@ const Projects = () => {
           <p className="text-5xl">Projects</p>
           <p>Here is a list of some thing I have built</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
           {projects.featuredProjects.map((project, index) => (
-            <ProjectItem
-              key={index}
-              title={project.title}
-              description={project.description}
-              image={project.image}
-              video={project.video}
-              repo={project.repo}
-              host={project.host}
-            />
+            <ProjectItem key={index} project={project} />
           ))}
         </div>
         <div className="flex flex-col lg:flex-row gap-10 my-10 py-10 border-b-2 border-b-white">
@@ -46,13 +38,7 @@ const Projects = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {projects.otherProjects.map((project, index) => (
-            <OtherProject
-              key={index}
-              title={project.title}
-              description={project.description}
-              repo={project.repo}
-              technologies={project.technologies}
-            />
+            <OtherProject key={index} project={project} />
           ))}
         </div>
       </div>
