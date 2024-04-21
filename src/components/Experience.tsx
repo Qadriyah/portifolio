@@ -76,21 +76,17 @@ const Experience = () => {
             objectives
           </p>
         </div>
-        <div className="overflow-x-scroll min-w-[200px]">
-          <div>
-            <Tabs
-              tabPosition="left"
-              animated={{ tabPane: false, inkBar: false }}
-              tabBarStyle={{
-                fontSize: "18px",
-                color: "#fff",
-                backgroundColor: "#12181f",
-              }}
-              items={items}
-              className={`${roboto.className}`}
-            />
-          </div>
-        </div>
+        <Tabs
+          tabPosition="left"
+          animated={{ tabPane: false, inkBar: false }}
+          tabBarStyle={{
+            fontSize: "18px",
+            color: "#fff",
+            backgroundColor: "#12181f",
+          }}
+          items={items}
+          className={`${roboto.className}`}
+        />
       </div>
     </Container>
   );

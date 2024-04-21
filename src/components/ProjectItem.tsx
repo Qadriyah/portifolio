@@ -6,40 +6,44 @@ import Link from "next/link";
 import Image from "next/image";
 
 type IProps = {
-  title: string;
-  description: string;
-  image: string;
-  video: string;
-  repo: string;
-  host: string;
+  project: {
+    title: string;
+    description: string;
+    image: string;
+    video: string;
+    repo: string;
+    host: string;
+  };
 };
 
-const ProjectItem: FunctionComponent<IProps> = ({
-  title,
-  description,
-  image,
-  video,
-  repo,
-  host,
-}) => {
+const ProjectItem: FunctionComponent<IProps> = ({ project }) => {
   return (
-    <div className="flex-1 flex flex-col gap-5 justify-between">
-      <div>
-        <p className="text-3xl mb-5">{title}</p>
-        <p>{description}</p>
+    <div className="flex-1 flex flex-col gap-5 justify-between bg-[#12181f] rounded-md">
+      <div className="p-10">
+        <p className="text-3xl mb-5">{project.title}</p>
+        <p>{project.description}</p>
         <div className="flex gap-5 my-5">
-          <Link href={video} target="_blank" className="cursor-pointer">
+          <Link href={project.video} target="_blank" className="cursor-pointer">
             <IoVideocam size={30} className="text-gray-500 hover:text-white" />
           </Link>
-          <Link href={repo} target="_blank" className="cursor-pointer">
+          <Link href={project.repo} target="_blank" className="cursor-pointer">
             <SiGithub size={30} className="text-gray-500 hover:text-white" />
           </Link>
-          <Link href={host} target="_blank" className="cursor-pointer">
+          <Link href={project.host} target="_blank" className="cursor-pointer">
             <FiLink size={30} className="text-gray-500 hover:text-white" />
           </Link>
         </div>
       </div>
-      <Image src={image} alt="img" width={300} height={300} />
+      <Link href={project.host} target="_blank" className="cursor-pointer">
+        <div
+          className="min-h-[250px] w-full cursor-pointer hover:opacity-45"
+          style={{
+            backgroundImage: `url(${project.image})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+          }}
+        />
+      </Link>
     </div>
   );
 };
