@@ -1,47 +1,50 @@
 import React from "react";
-import { motion, useCycle } from "framer-motion";
-import { useDimensions } from "@/hooks";
-import Navigation from "./Navigation";
+import { Drawer, type DrawerProps } from "antd";
+import { useCycle } from "framer-motion";
 import MenuToggle from "./MenuToggle";
+import menuItems from "../../data/menuItems.json";
+import Anchor from "../Anchor";
+import { useAppSelector } from "@/lib/hooks";
 
-const sidebar = {
-  open: (height = 1000) => ({
-    clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
-    transition: {
-      type: "spring",
-      stiffness: 20,
-      restDelta: 2,
-    },
-  }),
-  closed: {
-    clipPath: "circle(20px at 40px 40px)",
-    transition: {
-      delay: 0.5,
-      type: "spring",
-      stiffness: 400,
-      damping: 40,
-    },
-  },
-};
-
-const Drawer = () => {
+const DrawerNav = () => {
   const [isOpen, toggleOpen] = useCycle(false, true);
-  const containerRef = React.useRef(null);
-  const { height } = useDimensions(containerRef);
+  const { active } = useAppSelector((state) => state.menu);
+  const [placement] = React.useState<DrawerProps["placement"]>("left");
 
   return (
-    <motion.nav
-      initial={false}
-      animate={isOpen ? "open" : "closed"}
-      custom={height}
-      ref={containerRef}
-      className="block md:hidden"
-    >
-      <motion.div className="background" variants={sidebar} />
-      <Navigation />
-      <MenuToggle toggle={() => toggleOpen()} />
-    </motion.nav>
+    <>
+      <MenuToggle isOpen={isOpen} toggle={() => toggleOpen()} />
+      <Drawer
+        placement={placement}
+        closable={false}
+        onClose={() => toggleOpen()}
+        open={isOpen}
+        key={placement}
+        style={{
+          backgroundColor: "#12181f",
+          width: "200px",
+        }}
+      >
+        <div className="flex flex-col w-[100px]">
+          {menuItems.map((item, index) => (
+            <Anchor
+              key={index}
+              id={`${active === item.id ? "active" : undefined}`}
+              href={item.route}
+              offset={70}
+              className={`p-5 hover:text-blue-500 hover:border-b-2 hover:border-b-blue-500 ${
+                active === item.id
+                  ? "text-blue-500 border-b-2 border-b-blue-500"
+                  : ""
+              }`}
+            >
+              {item.title}
+            </Anchor>
+          ))}
+        </div>
+      </Drawer>
+    </>
   );
 };
 
-export default Drawer;
+export default DrawerNav;
