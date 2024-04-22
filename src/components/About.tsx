@@ -6,6 +6,7 @@ import Container from "./Container";
 import { useIsVisible } from "@/hooks";
 import { useAppDispatch } from "@/lib/hooks";
 import { setActive } from "@/lib/features/menu";
+import myInfo from "../data/info.json";
 
 const About = () => {
   const dispatch = useAppDispatch();
@@ -30,14 +31,7 @@ const About = () => {
           <p className="text-3xl md:text-4xl lg:text-5xl font-bold">
             Baker Sekitoleko
           </p>
-          <p>
-            I&#x2019;m a Full-Stack software engineer with a strong focus on the
-            frontend. Recently, I have been passionately working on React, Next,
-            Node and Nest related projects. I am also passionate about user
-            experience and constantly strive to create intuitive and engaging
-            applications. My goal is to continue to develop my skills and work
-            on projects that make a positive impact on the society.
-          </p>
+          <p>{myInfo.about}</p>
           <div className="flex gap-5 items-center mt-10 cursor-pointer">
             <Link
               className="arrow-container text-2xl cursor-pointer"
