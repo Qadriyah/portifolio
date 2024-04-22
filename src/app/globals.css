@@ -101,7 +101,7 @@ button {
   height: 30px;
 }
 
-.toggleIcon[data-isOn="true"] {
+.toggleIcon[data-ison="true"] {
   background-image: url("/assets/images/close.svg");
   transition: 300ms;
 }
