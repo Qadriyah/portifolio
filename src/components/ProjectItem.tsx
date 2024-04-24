@@ -18,7 +18,7 @@ type IProps = {
 
 const ProjectItem: FunctionComponent<IProps> = ({ project }) => {
   return (
-    <div className="flex-1 flex flex-col gap-5 justify-between bg-[#12181f] rounded-md">
+    <div className="flex-1 flex flex-col gap-5 justify-between bg-[#12181f] rounded-md cursor-pointer duration-500 md:group-hover:blur-sm md:hover:!blur-none group-hover:scale-[0.85] hover:!scale-100 tracking-wider">
       <div className="p-10">
         <p className="text-3xl mb-5">{project.title}</p>
         <p>{project.description}</p>
@@ -34,9 +34,9 @@ const ProjectItem: FunctionComponent<IProps> = ({ project }) => {
           </Link>
         </div>
       </div>
-      <Link href={project.host} target="_blank" className="cursor-pointer">
+      <Link href={project.host} target="_blank">
         <div
-          className="min-h-[250px] w-full cursor-pointer hover:opacity-45"
+          className="min-h-[250px] w-full"
           style={{
             backgroundImage: `url(${project.image})`,
             backgroundRepeat: "no-repeat",

@@ -26,7 +26,7 @@ const Projects = () => {
           <p className="text-5xl">Projects</p>
           <p>Here is a list of some thing I have built</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 group">
           {projects.featuredProjects.map((project, index) => (
             <ProjectItem key={index} project={project} />
           ))}
@@ -36,7 +36,7 @@ const Projects = () => {
             Other Noteworthy Projects
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 group">
           {projects.otherProjects.map((project, index) => (
             <OtherProject key={index} project={project} />
           ))}

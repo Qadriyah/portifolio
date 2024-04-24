@@ -15,7 +15,7 @@ type IProps = {
 
 const OtherProject: FunctionComponent<IProps> = ({ project }) => {
   return (
-    <div className="bg-[#12181f] p-5 rounded-md flex flex-col justify-between gap-5">
+    <div className="bg-[#12181f] p-5 rounded-md flex flex-col justify-between gap-5 duration-500 md:group-hover:blur-sm md:hover:!blur-none group-hover:scale-[0.85] hover:!scale-100 tracking-wider">
       <div>
         <div className="flex justify-between">
           <BsFolder2Open size={30} className="text-white" />
