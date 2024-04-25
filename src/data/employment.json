@@ -5,7 +5,7 @@
     "workDone": [
       "Made significant improvements to in-house CRM such as introducing database transactions (reduced integration test time by over 60%) and keyset pagination which decreased fetching time by 20%, as well as failure retry logic.",
       "Introduced periodic report generation that increased loading time by 40%. Also separated a single reporting module that would load multiple reports simultaneously into separating granular reports that increased loading by over 90%",
-      "I wrote logic for uploading customer files on Google Cloud which were being store on a local hard drive. This significantly improved operational efficiency and employee productivity by 15%",
+      "I wrote logic for uploading customer files on Google Cloud which were being stored on a local hard drive. This significantly improved operational efficiency and employee productivity by 15%",
       "Also introduced redis caching on routes that were fetching a lot of data, this significantly improved the response time",
       "I'm currently working a property management tool that is used to manage construction work on apartment buldings"
     ],
