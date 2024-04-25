@@ -1,11 +1,19 @@
 {
   "featuredProjects": [
     {
-      "title": "eShop",
+      "title": "eShop Dashboard",
       "description": "E-commerce tool used to sell things online. This is a management dashboard for this application",
       "image": "/assets/images/eshop.png",
       "video": "https://www.loom.com/share/02b41ba2ed984a9eaa6a15680bd90d1b",
       "repo": "https://github.com/Qadriyah/eshop-dashboard",
+      "host": "https://console-eshop.netlify.app"
+    },
+    {
+      "title": "eShop API",
+      "description": "E-commerce tool used to sell things online. This is a RESTful API for this application",
+      "image": "/assets/images/eshop.png",
+      "video": "https://www.loom.com/share/02b41ba2ed984a9eaa6a15680bd90d1b",
+      "repo": "https://github.com/Qadriyah/eshop-backend",
       "host": "https://console-eshop.netlify.app"
     },
     {
