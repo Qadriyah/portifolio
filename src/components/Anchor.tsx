@@ -15,7 +15,6 @@ const Anchor: React.FC<IProps> = ({ offset, ...props }) => {
     event.currentTarget.classList.add(
       ...["text-blue-500", "border-b-2", "border-b-blue-500"]
     );
-    event.currentTarget.setAttribute("id", "active");
 
     const id = event.currentTarget.getAttribute("href")?.slice(1);
 

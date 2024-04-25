@@ -1,30 +1,33 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 import Container from "./Container";
-import { useIsVisible } from "@/hooks";
 import { useAppDispatch } from "@/lib/hooks";
 import { setActive } from "@/lib/features/menu";
 import myInfo from "../data/info.json";
+import { useIsVisible } from "@/hooks";
 
 const About = () => {
   const dispatch = useAppDispatch();
   const ref = React.useRef<HTMLDivElement>(null);
-  const isVisible = useIsVisible(ref);
+  const isInView = useIsVisible(ref);
 
   React.useEffect(() => {
-    if (isVisible) {
+    if (isInView) {
       dispatch(setActive("about"));
     }
-  }, [dispatch, isVisible]);
+  }, [dispatch, isInView]);
 
   return (
     <Container containerId="about">
-      <div
+      <motion.div
+        initial={{ y: -500 }}
+        animate={{ y: isInView ? 0 : -500 }}
+        transition={{ type: "spring", duration: 1.3, bounce: 0.3 }}
         className="flex-1 flex gap-10 flex-col-reverse lg:flex-row"
+        id={isInView ? "visible" : ""}
         ref={ref}
-        id={isVisible ? "visible" : ""}
       >
         <div className="flex-1 flex flex-col gap-5 justify-center">
           <p className="text-3xl md:text4xl mt-10">About Myself</p>
@@ -51,7 +54,7 @@ const About = () => {
             backgroundPosition: "center",
           }}
         />
-      </div>
+      </motion.div>
     </Container>
   );
 };

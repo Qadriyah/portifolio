@@ -11,17 +11,17 @@ import projects from "../data/projects.json";
 const Projects = () => {
   const dispatch = useAppDispatch();
   const ref = React.useRef<HTMLDivElement>(null);
-  const isVisible = useIsVisible(ref);
+  const isInView = useIsVisible(ref);
 
   React.useEffect(() => {
-    if (isVisible) {
+    if (isInView) {
       dispatch(setActive("projects"));
     }
-  }, [dispatch, isVisible]);
+  }, [dispatch, isInView]);
 
   return (
     <Container containerId="projects">
-      <div className="flex-1" ref={ref} id={isVisible ? "visible" : ""}>
+      <div className="flex-1" ref={ref} id={isInView ? "visible" : ""}>
         <div className="flex flex-col lg:flex-row gap-10 my-10 py-10 border-b-2 border-b-white">
           <p className="text-5xl">Projects</p>
           <p>Here is a list of some thing I have built</p>

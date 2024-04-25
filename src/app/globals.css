@@ -6,6 +6,8 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 255, 255, 255;
   --background-end-rgb: 255, 255, 255;
+  --white: #fafafa;
+  --blue: rgb(59 130 246 / 1);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -104,4 +106,14 @@ button {
 .toggleIcon[data-ison="true"] {
   background-image: url("/assets/images/close.svg");
   transition: 300ms;
+}
+
+.progress-bar {
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; */
+  height: 10px;
+  background: var(--blue);
+  transform-origin: 0%;
 }
