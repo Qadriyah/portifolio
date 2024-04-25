@@ -4,13 +4,13 @@
     "date": "Mar 2023 - Present",
     "workDone": [
       "Made significant improvements to in-house CRM such as introducing database transactions (reduced integration test time by over 60%) and keyset pagination which decreased fetching time by 20%, as well as failure retry logic.",
-      "Introduced periodic report generation that increated loading time by 40%. Also seperated a single reporting module that would load multiple reports simultaneously into seperating granular reports that increased loading by over 90%",
+      "Introduced periodic report generation that increased loading time by 40%. Also separated a single reporting module that would load multiple reports simultaneously into separating granular reports that increased loading by over 90%",
       "I wrote logic for uploading customer files on Google Cloud which were being store on a local hard drive. This significantly improved operational efficiency and employee productivity by 15%",
       "Also introduced redis caching on routes that were fetching a lot of data, this significantly improved the response time",
       "I'm currently working a property management tool that is used to manage construction work on apartment buldings"
     ],
     "technologies": [
-      "TS",
+      "JS",
       "TS",
       "React",
       "Redux",
@@ -35,7 +35,7 @@
     "position": "Frontend Engineer",
     "date": "Sep 2022 - Feb - 2023",
     "workDone": [
-      "Led the development of a construction services hailing application that registsred a significant number of service providers and customers during it's launch.",
+      "Led the development of a construction services hailing application that registered a significant number of service providers and customers during it's launch.",
       "Worked closely with the design and backend teams to ensure we put up something that would make the customers happy and create lasting value for the company.",
       "Performed software testing to uncover bugs and troubleshoot performance issues prior to application launch."
     ],

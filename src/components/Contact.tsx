@@ -1,27 +1,26 @@
 "use client";
 import React from "react";
 import Container from "./Container";
-import { useIsVisible } from "@/hooks";
 import { useAppDispatch } from "@/lib/hooks";
 import { setActive } from "@/lib/features/menu";
 import Link from "next/link";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
 import SocialLinks from "./SocialLinks";
+import { useIsVisible } from "@/hooks";
 
 const Contact = () => {
   const dispatch = useAppDispatch();
   const ref = React.useRef<HTMLDivElement>(null);
-  const isVisible = useIsVisible(ref);
+  const isInView = useIsVisible(ref);
 
   React.useEffect(() => {
-    if (isVisible) {
+    if (isInView) {
       dispatch(setActive("contact"));
     }
-  }, [dispatch, isVisible]);
+  }, [dispatch, isInView]);
 
   return (
     <Container containerId="contact">
-      <div className="flex-1" ref={ref} id={isVisible ? "visible" : ""}>
+      <div className="flex-1" ref={ref} id={isInView ? "visible" : ""}>
         <div className="flex flex-col lg:flex-row gap-10 my-10 py-10 border-b-2 border-b-white">
           <div className="w-[300px]">
             <p className="text-5xl">Let&#x2019;s Talk</p>

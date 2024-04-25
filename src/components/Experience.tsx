@@ -3,11 +3,11 @@ import React from "react";
 import Container from "./Container";
 import { Tabs, TabsProps } from "antd";
 import { Roboto } from "next/font/google";
-import { useIsVisible } from "@/hooks";
 import { useAppDispatch } from "@/lib/hooks";
 import { setActive } from "@/lib/features/menu";
 import employment from "../data/employment.json";
 import Employment from "./Employment";
+import { useIsVisible } from "@/hooks";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -56,17 +56,17 @@ const items: TabsProps["items"] = [
 const Experience = () => {
   const dispatch = useAppDispatch();
   const ref = React.useRef<HTMLDivElement>(null);
-  const isVisible = useIsVisible(ref);
+  const isInView = useIsVisible(ref);
 
   React.useEffect(() => {
-    if (isVisible) {
+    if (isInView) {
       dispatch(setActive("experience"));
     }
-  }, [dispatch, isVisible]);
+  }, [dispatch, isInView]);
 
   return (
     <Container containerId="experience">
-      <div className="flex-1" ref={ref} id={isVisible ? "visible" : ""}>
+      <div ref={ref} id={isInView ? "visible" : ""} className="flex-1">
         <div className="flex flex-col lg:flex-row gap-10 my-10 py-10 border-b-2 border-b-white">
           <p className="text-5xl">Experience</p>
           <p>
