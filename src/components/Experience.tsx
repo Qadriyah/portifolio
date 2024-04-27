@@ -66,7 +66,15 @@ const Experience = () => {
 
   return (
     <Container containerId="experience">
-      <div ref={ref} id={isInView ? "visible" : ""} className="flex-1">
+      <div
+        ref={ref}
+        id={isInView ? "visible" : ""}
+        className={`flex-1 ${
+          isInView
+            ? "opacity-100 duration-1000 transition ease-in"
+            : "opacity-0"
+        }`}
+      >
         <div className="flex flex-col lg:flex-row gap-10 my-10 py-10 border-b-2 border-b-white">
           <p className="text-5xl">Experience</p>
           <p>
