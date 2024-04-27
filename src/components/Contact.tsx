@@ -6,6 +6,7 @@ import { setActive } from "@/lib/features/menu";
 import Link from "next/link";
 import SocialLinks from "./SocialLinks";
 import { useIsVisible } from "@/hooks";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const dispatch = useAppDispatch();
@@ -36,14 +37,24 @@ const Contact = () => {
         <div className="flex flex-col lg:flex-row">
           <div className="w-[300px]"></div>
           <div className="flex-1 flex flex-col gap-10 md:flex-row md:gap-0">
-            <div className="flex flex-col gap-5 flex-1">
+            <motion.div
+              initial={{ x: -500 }}
+              animate={{ x: isInView ? 0 : -500 }}
+              transition={{ duration: 0.5 }}
+              className={`flex flex-col gap-5 flex-1`}
+            >
               <p className="text-4xl">Contact</p>
               <p>Email: b.alzawad@gmail.com</p>
               <div className="flex gap-5">
                 <SocialLinks />
               </div>
-            </div>
-            <div className="flex flex-col gap-10 flex-1">
+            </motion.div>
+            <motion.div
+              initial={{ x: 500 }}
+              animate={{ x: isInView ? 0 : 500 }}
+              transition={{ duration: 0.5 }}
+              className="flex flex-col gap-10 flex-1"
+            >
               <p className="text-4xl">Message</p>
               <div>
                 <Link
@@ -54,7 +65,7 @@ const Contact = () => {
                   Say Hello
                 </Link>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
