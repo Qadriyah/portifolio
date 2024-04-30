@@ -76,7 +76,8 @@
     "workDone": [
       "Worked on a site reliability engineering tool. Developed and maintained — hands-on and fullstack — dozens of core features in Javascript, Node and React, across the entire platform.",
       "Refactored a React Native app and introduced Redux to provide a central store that holds all states of the application there by optimizing re-renders and preventing unnecessary rendering of components, leading to better application performance and scalability.",
-      "I developed logic for stitching multiple images into a single image for upload without compromising the quality. Achieved 16x reduction in the upload time"
+      "I developed logic for stitching multiple images into a single image for upload without compromising the quality. Achieved a 25% reduction in the number of image uplaods and the upload time",
+      "Improved image upload in a React Native app by uploading images in a background task, which greatly improved user experience"
     ],
     "technologies": [
       "JS",

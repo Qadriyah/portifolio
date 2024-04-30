@@ -53,7 +53,9 @@ const Contact = () => {
               initial={{ x: 500 }}
               animate={{ x: isInView ? 0 : 500 }}
               transition={{ duration: 0.5 }}
-              className="flex flex-col gap-10 flex-1"
+              className={`flex flex-col gap-10 flex-1 ${
+                isInView ? "block" : "hidden"
+              }`}
             >
               <p className="text-4xl">Message</p>
               <div>
