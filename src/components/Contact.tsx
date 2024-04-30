@@ -23,7 +23,7 @@ const Contact = () => {
     <Container containerId="contact">
       <div className="flex-1" ref={ref} id={isInView ? "visible" : ""}>
         <div className="flex flex-col lg:flex-row gap-10 my-10 py-10 border-b-2 border-b-white">
-          <div className="w-[300px]">
+          <div className="flex-[0.5]">
             <p className="text-5xl">Let&#x2019;s Talk</p>
           </div>
           <div className="flex-1">
@@ -34,14 +34,16 @@ const Contact = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row">
-          <div className="w-[300px]"></div>
+        <div className="flex flex-col lg:flex-row gap-10">
+          <div className="flex-[0.5]"></div>
           <div className="flex-1 flex flex-col gap-10 md:flex-row md:gap-0">
             <motion.div
               initial={{ x: -500 }}
               animate={{ x: isInView ? 0 : -500 }}
               transition={{ duration: 0.5 }}
-              className={`flex flex-col gap-5 flex-1`}
+              className={`flex flex-col gap-5 flex-1 ${
+                isInView ? "block" : "hidden"
+              }`}
             >
               <p className="text-4xl">Contact</p>
               <p>Email: b.alzawad@gmail.com</p>
