@@ -8,6 +8,7 @@ import { setActive } from "@/lib/features/menu";
 import employment from "../data/employment.json";
 import Employment from "./Employment";
 import { useIsVisible } from "@/hooks";
+import Tab from "./Tab";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -17,37 +18,37 @@ const roboto = Roboto({
 const items: TabsProps["items"] = [
   {
     key: "1",
-    label: "Virtus Ventures",
+    label: <Tab label="Virtus Ventures" country="USA" />,
     className: `text-[18px] text-white ${roboto.className}`,
     children: <Employment employer={employment.Virtus} />,
   },
   {
     key: "2",
-    label: "Cognative Insights",
+    label: <Tab label="Cognative Insights" country="Uganda" />,
     className: `text-[18px] text-white ${roboto.className}`,
     children: <Employment employer={employment.Cognative} />,
   },
   {
     key: "3",
-    label: "LUK Solar",
+    label: <Tab label="LUK Solar" country="Uganda" />,
     className: `text-[18px] text-white ${roboto.className}`,
     children: <Employment employer={employment.LUKSolar} />,
   },
   {
     key: "4",
-    label: "HackerBay",
+    label: <Tab label="HackerBay" country="USA" />,
     className: `text-[18px] text-white ${roboto.className}`,
     children: <Employment employer={employment.HackerBay} />,
   },
   {
     key: "5",
-    label: "Andela",
+    label: <Tab label="Andela" country="Uganda" />,
     className: `text-[18px] text-white ${roboto.className}`,
     children: <Employment employer={employment.Andela} />,
   },
   {
     key: "6",
-    label: "Go Pay",
+    label: <Tab label="Go Pay" country="Uganda" />,
     className: `text-[18px] text-white ${roboto.className}`,
     children: <Employment employer={employment.GoPay} />,
   },
