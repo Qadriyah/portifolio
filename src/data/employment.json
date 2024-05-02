@@ -28,6 +28,7 @@
       "Chai",
       "Jest",
       "React Testing Library",
+      "Puppeteer",
       "Digital Ocean"
     ]
   },
