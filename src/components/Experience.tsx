@@ -18,37 +18,37 @@ const roboto = Roboto({
 const items: TabsProps["items"] = [
   {
     key: "1",
-    label: <Tab label="Virtus Ventures" country="USA" />,
+    label: <Tab label="Virtus Ventures" country="Akron, OH, USA" />,
     className: `text-[18px] text-white ${roboto.className}`,
     children: <Employment employer={employment.Virtus} />,
   },
   {
     key: "2",
-    label: <Tab label="Cognative Insights" country="Uganda" />,
+    label: <Tab label="Cognative Insights" country="Kampala, Uganda" />,
     className: `text-[18px] text-white ${roboto.className}`,
     children: <Employment employer={employment.Cognative} />,
   },
   {
     key: "3",
-    label: <Tab label="LUK Solar" country="Uganda" />,
+    label: <Tab label="LUK Solar" country="Kampala, Uganda" />,
     className: `text-[18px] text-white ${roboto.className}`,
     children: <Employment employer={employment.LUKSolar} />,
   },
   {
     key: "4",
-    label: <Tab label="HackerBay" country="USA" />,
+    label: <Tab label="HackerBay" country="Boston, MA, USA" />,
     className: `text-[18px] text-white ${roboto.className}`,
     children: <Employment employer={employment.HackerBay} />,
   },
   {
     key: "5",
-    label: <Tab label="Andela" country="Uganda" />,
+    label: <Tab label="Andela" country="Kampala, Uganda" />,
     className: `text-[18px] text-white ${roboto.className}`,
     children: <Employment employer={employment.Andela} />,
   },
   {
     key: "6",
-    label: <Tab label="Go Pay" country="Uganda" />,
+    label: <Tab label="Go Pay" country="Kampala, Uganda" />,
     className: `text-[18px] text-white ${roboto.className}`,
     children: <Employment employer={employment.GoPay} />,
   },

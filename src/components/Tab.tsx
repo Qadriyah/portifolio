@@ -9,7 +9,7 @@ const Tab: React.FunctionComponent<IProps> = ({ label, country }) => {
   return (
     <div className="text-left">
       <p>{label}</p>
-      <p className="opacity-60">{country || ""}</p>
+      <p className="opacity-60 text-xs">{country || ""}</p>
     </div>
   );
 };
