@@ -46,7 +46,7 @@ const Contact = () => {
               }`}
             >
               <p className="text-4xl">Contact</p>
-              <p>Email: b.alzawad@gmail.com</p>
+              <p>Email: bksekitoleko@gmail.com</p>
               <div className="flex gap-5">
                 <SocialLinks />
               </div>
@@ -62,7 +62,7 @@ const Contact = () => {
               <p className="text-4xl">Message</p>
               <div>
                 <Link
-                  href="mailto:b.alzawad@gmail.com"
+                  href="mailto:bksekitoleko@gmail.com"
                   className="cursor-pointer border border-white text-center p-5 rounded-md hover:bg-white hover:border-blue-600 hover:border-2 hover:text-blue-600"
                   target="_blank"
                 >
