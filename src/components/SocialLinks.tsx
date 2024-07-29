@@ -21,7 +21,7 @@ const SocialLinks = () => {
         <FaGithub size={30} className="text-gray-500 hover:text-white" />
       </Link>
       <Link
-        href="https://www.dropbox.com/scl/fi/z827e9i2wchc1vmt7ghxz/Resume.pdf?rlkey=r0np6w1zjivlab6f4j4nhqzpx&dl=0"
+        href="https://www.dropbox.com/scl/fi/uquri0rlj825vwit7z4qb/Resume.pdf?rlkey=oymyi9d7o2x1c2s8d6ssmxg33&dl=0"
         className="cursor-pointer"
         target="_blank"
       >
