@@ -1,20 +1,20 @@
 {
   "featuredProjects": [
     {
-      "title": "eShop Dashboard",
-      "description": "E-commerce tool used to sell things online. This is a management dashboard for this application",
-      "image": "/assets/images/eshop.png",
-      "video": "https://www.loom.com/share/02b41ba2ed984a9eaa6a15680bd90d1b",
-      "repo": "https://github.com/Qadriyah/eshop-dashboard",
-      "host": "https://console-eshop.netlify.app"
+      "title": "Duukawise",
+      "description": "A cloud-based system that effortlessly tracks sales, manages inventory in real-time, and provides insightful analytics from anywhere you have internet access, taking your business potential to the next level",
+      "image": "/assets/images/duukawise.png",
+      "video": "https://www.loom.com/share/89109553677146fe9e6973984a617c80",
+      "repo": "#",
+      "host": "https://sandbox.duukawise.com"
     },
     {
-      "title": "eShop API",
-      "description": "E-commerce tool used to sell things online. This is a RESTful API for this application",
-      "image": "/assets/images/eshop.png",
-      "video": "https://www.loom.com/share/02b41ba2ed984a9eaa6a15680bd90d1b",
-      "repo": "https://github.com/Qadriyah/eshop-backend",
-      "host": "https://console-eshop.netlify.app"
+      "title": "Duukawise Landing",
+      "description": "A cloud-based system that effortlessly tracks sales, manages inventory in real-time, and provides insightful analytics from anywhere you have internet access, taking your business potential to the next level",
+      "image": "/assets/images/landing.png",
+      "video": "#",
+      "repo": "#",
+      "host": "https://duukawise.com"
     },
     {
       "title": "OneUptime",
