@@ -4,7 +4,7 @@
     "date": "Mar 2023 - Present",
     "workDone": [
       "Implemented custom calendars for an in-house CRM, for scheduling service calls and assigning tasks to installers and supervisors, which improved operational efficiency.",
-      "Introduced periodic report generation that increased loading time by 40%. Also separated a single reporting module that would load multiple reports simultaneously into separating granular reports that increased loading by over 90%",
+      "Redesigned a reporting module full-stack that was used to load multiple reports on a single page to a more efficient one that generates reports on demand improving loading time by over 60%.",
       "Implemented logic for uploading customer files on Google Cloud, which were being stored on a local hard drive. This significantly improved operational efficiency and employee productivity by 15%",
       "Introduced Redis caching on routes that were fetching a lot of data, this significantly improved the API response time by 80%",
       "I'm currently working on a property management tool that is used to manage construction work on apartment buildings",
