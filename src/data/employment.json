@@ -77,9 +77,10 @@
     "date": "May 2020 - Oct - 2022",
     "workDone": [
       "Developed and maintained hands-on and full-stack, dozens of core features for a site reliability engineering tool using Javascript, Node and React.",
-      "Refactored a React Native app and introduced Redux to provide a central store that holds all states of the application thereby optimizing re-renders and preventing unnecessary rendering of components, leading to better application performance and scalability.",
-      "I developed logic for stitching multiple images into a single image for upload without compromising the quality. Achieved a 25% reduction in the number of image uplaods and the average upload time",
-      "Improved image upload in a React Native app by uploading images in a background task, which greatly improved user experience"
+      "I refactored a React Native codebase to ensure a smooth integration of custom native modules specifically OpenCV and background processing, leading to better application performance and enhancing user experience.",
+      "I reviewed a React Native code base to identify areas of improvement in both performance and security.",
+      "I implemented logic for stitching multiple images into one for upload using OpenCV. Achieved 16x reduction in the upload time.",
+      "I improved image upload functionality with background processing, greatly enhancing user experience"
     ],
     "technologies": [
       "JS",
