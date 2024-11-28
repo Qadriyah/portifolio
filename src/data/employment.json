@@ -8,7 +8,8 @@
       "Implemented logic for uploading customer files on Google Cloud, which were being stored on a local hard drive. This significantly improved operational efficiency and employee productivity by 15%",
       "Introduced Redis caching on routes that were fetching a lot of data, this significantly improved the API response time by 80%",
       "I'm currently working on a property management tool that is used to manage construction work on apartment buildings",
-      "Set up a CI/CD pipeline using CircleCI. This increased team productivity hence maximizing the overall ROI for the company."
+      "Set up a CI/CD pipeline using CircleCI. This increased team productivity hence maximizing the overall ROI for the company.",
+      "Participated in agile development processes, focusing on writing testable and maintainable code using test-driven development (TDD)."
     ],
     "technologies": [
       "JS",
@@ -79,7 +80,7 @@
       "Developed and maintained hands-on and full-stack, dozens of core features for a site reliability engineering tool using Javascript, Node and React.",
       "I refactored a React Native codebase to ensure a smooth integration of custom native modules specifically OpenCV and background processing, leading to better application performance and enhancing user experience.",
       "I reviewed a React Native code base to identify areas of improvement in both performance and security.",
-      "I implemented logic for stitching multiple images into one for upload using OpenCV. Achieved 16x reduction in the upload time.",
+      "I implemented logic for stitching multiple images into one for upload using OpenCV. Achieved a 25% reduction in the number of images required for upload, thus reducing the upload time and improving user experience",
       "I improved image upload functionality with background processing, greatly enhancing user experience"
     ],
     "technologies": [
