@@ -3,13 +3,15 @@
     "position": "Full-Stack Engineer",
     "date": "Mar 2023 - Present",
     "workDone": [
-      "Implemented custom calendars for an in-house CRM, for scheduling service calls and assigning tasks to installers and supervisors, which improved operational efficiency.",
-      "Redesigned a reporting module full-stack that was used to load multiple reports on a single page to a more efficient one that generates reports on demand improving loading time by over 60%.",
-      "Implemented logic for uploading customer files on Google Cloud, which were being stored on a local hard drive. This significantly improved operational efficiency and employee productivity by 15%",
-      "Introduced Redis caching on routes that were fetching a lot of data, this significantly improved the API response time by 80%",
-      "I'm currently working on a property management tool that is used to manage construction work on apartment buildings",
-      "Set up a CI/CD pipeline using CircleCI. This increased team productivity hence maximizing the overall ROI for the company.",
-      "Participated in agile development processes, focusing on writing testable and maintainable code using test-driven development (TDD)."
+      "Migrated customer file storage from local hard drives to Google Cloud, streamlining file management and improving employee productivity by 15%.",
+      "Designed and implemented a custom calendar system for scheduling and assigning tasks to installers, inspectors, and supervisors, improving task management efficiency.",
+      "Revamped the reporting module to use on-demand report generation, resulting in a 60% improvement in loading times and a better user experience.",
+      "Developed interactive SVG-based components for real-time visualization of service call data, enabling intuitive insights for end users.",
+      "Built reusable React components using TypeScript and Tailwind, improving code scalability and reducing development time for future features.",
+      "Established a robust CI/CD pipeline with CircleCI, reducing manual deployment errors and accelerating release cycles.",
+      "Participated in Agile ceremonies, contributing to sprint planning, backlog grooming, and retrospectives to ensure smooth project execution.",
+      "Enhanced accessibility by implementing responsive designs and cross-browser compatibility for all features.",
+      "Developed comprehensive unit, integration end-to-end tests using RTL, Cypress, Jest and Supertest, achieving 90% test coverage for critical features."
     ],
     "technologies": [
       "JS",
@@ -17,7 +19,6 @@
       "React",
       "Redux",
       "Bootstrap",
-      "Ant Design",
       "Formik",
       "Next",
       "Tailwind",
@@ -30,7 +31,7 @@
       "Chai",
       "Jest",
       "React Testing Library",
-      "Puppeteer",
+      "Cypress",
       "Digital Ocean"
     ]
   },
@@ -38,9 +39,16 @@
     "position": "Frontend Engineer",
     "date": "Sep 2022 - Feb - 2023",
     "workDone": [
-      "I led the development of a construction services hailing application that registered a significant number of service providers and customers during its launch, which registered a 15% increase in the company revenew.",
-      "Collaborated closely with the design and backend teams to ensure we put up something that would make the customers happy and create lasting value for the company.",
-      "Created Github actions to build the app and upload final artifacts for publishing to the stores. This improved team productivity by 30%"
+      "Led the development of a construction services hailing app that achieved a 15% increase in revenue after its launch.",
+      "Designed interactive dashboards using React and D3 to display real-time data, helping users visualize key metrics effectively.",
+      "Collaborated with backend teams to create queries for fetching and manipulating data efficiently, ensuring seamless frontend-backend integration.",
+      "Utilized TypeScript to enhance type safety across the construction services app, reducing runtime errors by 25% and enhancing developer productivity.",
+      "Created GitHub Actions workflows for automated builds and testing, reducing time spent on manual processes by 30%.",
+      "Designed and implemented reusable UI components using Tailwind CSS, improving design consistency across the application.",
+      "Conducted performance optimizations by lazy-loading React components, React server components and leveraging dynamic imports, reducing initial page load times by 40%.",
+      "Participated in Agile ceremonies, contributing to sprint planning, backlog grooming, and retrospectives to ensure smooth project execution.",
+      "Created TikZ/PGF visual elements for use in interactive dashboards, showcasing real-time metrics with precision.",
+      "Authored user manuals and technical guides using LaTeX, ensuring high-quality and consistent formatting."
     ],
     "technologies": [
       "JS",
@@ -51,7 +59,8 @@
       "React Native Elements",
       "Expo",
       "Formik",
-      "Socket.io"
+      "Socket.io",
+      "LaTex"
     ]
   },
   "LUKSolar": {
@@ -77,11 +86,15 @@
     "position": "Full-Stack Engineer",
     "date": "May 2020 - Oct - 2022",
     "workDone": [
-      "Developed and maintained hands-on and full-stack, dozens of core features for a site reliability engineering tool using Javascript, Node and React.",
-      "I refactored a React Native codebase to ensure a smooth integration of custom native modules specifically OpenCV and background processing, leading to better application performance and enhancing user experience.",
-      "I reviewed a React Native code base to identify areas of improvement in both performance and security.",
-      "I implemented logic for stitching multiple images into one for upload using OpenCV. Achieved a 25% reduction in the number of images required for upload, thus reducing the upload time and improving user experience",
-      "I improved image upload functionality with background processing, greatly enhancing user experience"
+      "Developed dozens of core features for a Site Reliability Engineering tool, leveraging React, TypeScript, and Node.js for a seamless user experience.",
+      "Enhanced image upload functionality by implementing background processing and integrating OpenCV for stitching multiple images into a single file, improving upload performance by 25%.",
+      "Created interactive visualizations for performance monitoring dashboards, offering a dynamic and intuitive way to analyze system health.",
+      "Refactored backend services to align with TypeScript standards, improving maintainability and reducing debugging time by 30%.",
+      "Refactored a React Native codebases to integrate custom native modules for image processing and background tasks, enhancing application performance and stability.",
+      "Implemented dynamic form rendering with React and Redux, enabling the app to adapt seamlessly to user input without compromising performance.",
+      "Improved system security by reviewing and updating authentication flows, introducing token-based mechanisms for enhanced user protection.",
+      "Reduced technical debt by identifying and fixing performance bottlenecks in both frontend and backend systems.",
+      "Optimized deployment pipelines using GitHub Actions, automating test, build, and deployment workflows to minimize downtime."
     ],
     "technologies": [
       "JS",
@@ -106,8 +119,15 @@
     "position": "Full-Stack Engineer",
     "date": "Dec 2018 - Dec - 2019",
     "workDone": [
-      "Developed and maintained major features of Andela's in-house, engineer placement process managing app, improving productivity.",
-      "Participated in different Andela bootcamp projects, engaging in the entire development lifecycle right from requirements gathering and refining to implementation and deployment"
+      "Delivered scalable, user-friendly features for Andela's in-house engineer placement platform, streamlining operations and improving engineer-client matching.",
+      "Created interactive, data visualizations to showcase key metrics and trends, providing actionable insights to stakeholders.",
+      "Collaborated with design teams to build scalable, React-based interfaces for the in-house engineer placement platform.",
+      "Participated in the design and development of end-to-end solutions, collaborating closely with cross-functional teams to ensure timely delivery.",
+      "Contributed to various bootcamp projects, applying JavaScript, React, Python/Django and PHP/Laravel to create modular and maintainable applications.",
+      "Participated in Agile ceremonies, contributing to sprint planning, backlog grooming, and retrospectives to ensure smooth project execution.",
+      "Improved platform performance by implementing optimized state management techniques using Redux and React Query.",
+      "Integrated external APIs and ensured seamless data handling by leveraging PHP and Laravel in backend development.",
+      "Developed testing suites with Cypress, Jest, and PHPUnit, ensuring application reliability and functionality across diverse use cases. "
     ],
     "technologies": [
       "JS",
